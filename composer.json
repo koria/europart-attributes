@@ -1,0 +1,22 @@
+{
+    "name": "europarts/module-europarts",
+    "description": "",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "name": "Yevhen Koriakin",
+            "email": "yevhen.koriakin@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Europarts\\Europarts\\": ""
+        },
+        "files": [
+            "registration.php"
+        ]
+    }
+}
