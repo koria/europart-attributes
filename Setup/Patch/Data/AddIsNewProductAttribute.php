@@ -59,13 +59,13 @@ class AddIsNewProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'frontend' => '',
                 'required' => true,
                 'backend' => '',
-                'sort_order' => '30',
+                'sort_order' => '20',
                 'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
-                'default' => null,
+                'default' => 1,
                 'visible' => true,
                 'user_defined' => true,
                 'searchable' => true,
-                'filterable' => false,
+                'filterable' => true,
                 'comparable' => true,
                 'visible_on_front' => true,
                 'unique' => false,
@@ -73,8 +73,8 @@ class AddIsNewProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'group' => 'General',
                 'used_in_product_listing' => true,
                 'is_used_in_grid' => true,
-                'is_visible_in_grid' => false,
-                'is_filterable_in_grid' => false,
+                'is_visible_in_grid' => true,
+                'is_filterable_in_grid' => true,
                 'option' => array('values' => array(""))
             ]
         );
@@ -106,7 +106,7 @@ class AddIsNewProductAttribute implements DataPatchInterface, PatchRevertableInt
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }
