@@ -14,7 +14,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Setup\Patch\PatchRevertableInterface;
 
-class Add1cProductAttribute implements DataPatchInterface, PatchRevertableInterface
+class AddCode1CProductAttribute implements DataPatchInterface, PatchRevertableInterface
 {
 
     /**
@@ -50,10 +50,10 @@ class Add1cProductAttribute implements DataPatchInterface, PatchRevertableInterf
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
         $eavSetup->addAttribute(
             \Magento\Catalog\Model\Product::ENTITY,
-            '1c',
+            'code_1c',
             [
                 'type' => 'varchar',
-                'label' => '1c',
+                'label' => 'Code 1c',
                 'input' => 'text',
                 'source' => '',
                 'frontend' => '',
@@ -87,7 +87,7 @@ class Add1cProductAttribute implements DataPatchInterface, PatchRevertableInterf
         $this->moduleDataSetup->getConnection()->startSetup();
         /** @var EavSetup $eavSetup */
         $eavSetup = $this->eavSetupFactory->create(['setup' => $this->moduleDataSetup]);
-        $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, '1c');
+        $eavSetup->removeAttribute(\Magento\Catalog\Model\Product::ENTITY, 'code_1c');
 
         $this->moduleDataSetup->getConnection()->endSetup();
     }
