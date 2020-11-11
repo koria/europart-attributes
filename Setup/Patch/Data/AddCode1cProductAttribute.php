@@ -14,7 +14,7 @@ use Magento\Framework\Setup\ModuleDataSetupInterface;
 use Magento\Framework\Setup\Patch\DataPatchInterface;
 use Magento\Framework\Setup\Patch\PatchRevertableInterface;
 
-class AddCode1CProductAttribute implements DataPatchInterface, PatchRevertableInterface
+class AddCode1cProductAttribute implements DataPatchInterface, PatchRevertableInterface
 {
 
     /**
