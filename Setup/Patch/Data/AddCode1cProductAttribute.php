@@ -64,7 +64,7 @@ class AddCode1CProductAttribute implements DataPatchInterface, PatchRevertableIn
                 'default' => null,
                 'visible' => true,
                 'user_defined' => false,
-                'searchable' => false,
+                'searchable' => true,
                 'filterable' => false,
                 'comparable' => false,
                 'visible_on_front' => false,
@@ -75,7 +75,6 @@ class AddCode1CProductAttribute implements DataPatchInterface, PatchRevertableIn
                 'is_used_in_grid' => true,
                 'is_visible_in_grid' => false,
                 'is_filterable_in_grid' => false,
-                'option' => array('values' => array(""))
             ]
         );
 

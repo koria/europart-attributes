@@ -65,7 +65,7 @@ class AddEetModelProductAttribute implements DataPatchInterface, PatchRevertable
                 'visible' => true,
                 'user_defined' => true,
                 'searchable' => true,
-                'filterable' => false,
+                'filterable' => true,
                 'comparable' => false,
                 'visible_on_front' => false,
                 'unique' => false,
@@ -75,7 +75,6 @@ class AddEetModelProductAttribute implements DataPatchInterface, PatchRevertable
                 'is_used_in_grid' => true,
                 'is_visible_in_grid' => false,
                 'is_filterable_in_grid' => false,
-                'option' => array('values' => array(""))
             ]
         );
 

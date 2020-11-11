@@ -59,13 +59,13 @@ class AddModelProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'frontend' => '',
                 'required' => true,
                 'backend' => '',
-                'sort_order' => '10',
+                'sort_order' => '28',
                 'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
                 'default' => null,
                 'visible' => true,
-                'user_defined' => true,
+                'user_defined' => false,
                 'searchable' => true,
-                'filterable' => false,
+                'filterable' => true,
                 'comparable' => true,
                 'visible_on_front' => true,
                 'unique' => false,
@@ -75,7 +75,6 @@ class AddModelProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'is_used_in_grid' => true,
                 'is_visible_in_grid' => true,
                 'is_filterable_in_grid' => true,
-                'option' => array('values' => array(""))
             ]
         );
 

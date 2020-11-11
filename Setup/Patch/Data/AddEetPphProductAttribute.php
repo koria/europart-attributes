@@ -75,7 +75,6 @@ class AddEetPphProductAttribute implements DataPatchInterface, PatchRevertableIn
                 'is_used_in_grid' => false,
                 'is_visible_in_grid' => false,
                 'is_filterable_in_grid' => false,
-                'option' => array('values' => array(""))
             ]
         );
 

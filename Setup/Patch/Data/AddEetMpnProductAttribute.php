@@ -70,12 +70,11 @@ class AddEetMpnProductAttribute implements DataPatchInterface, PatchRevertableIn
                 'visible_on_front' => false,
                 'unique' => false,
                 'apply_to' => '',
-                'group' => 'General',
+                'group' => 'EET',
                 'used_in_product_listing' => false,
-                'is_used_in_grid' => true,
+                'is_used_in_grid' => false,
                 'is_visible_in_grid' => false,
                 'is_filterable_in_grid' => false,
-                'option' => array('values' => array(""))
             ]
         );
 
@@ -106,7 +105,7 @@ class AddEetMpnProductAttribute implements DataPatchInterface, PatchRevertableIn
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }

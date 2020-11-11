@@ -55,15 +55,15 @@ class AddIsNewProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'type' => 'int',
                 'label' => 'New',
                 'input' => 'boolean',
-                'source' => '',
+                'source' => \Magento\Eav\Model\Entity\Attribute\Source\Boolean::class,
                 'frontend' => '',
                 'required' => true,
                 'backend' => '',
-                'sort_order' => '20',
+                'sort_order' => '26',
                 'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
-                'default' => 1,
+                'default' => '1',
                 'visible' => true,
-                'user_defined' => true,
+                'user_defined' => false,
                 'searchable' => true,
                 'filterable' => true,
                 'comparable' => true,
@@ -75,7 +75,6 @@ class AddIsNewProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'is_used_in_grid' => true,
                 'is_visible_in_grid' => true,
                 'is_filterable_in_grid' => true,
-                'option' => array('values' => array(""))
             ]
         );
 

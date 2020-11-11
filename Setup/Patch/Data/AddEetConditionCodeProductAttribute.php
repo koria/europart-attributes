@@ -72,10 +72,9 @@ class AddEetConditionCodeProductAttribute implements DataPatchInterface, PatchRe
                 'apply_to' => '',
                 'group' => 'EET',
                 'used_in_product_listing' => false,
-                'is_used_in_grid' => true,
+                'is_used_in_grid' => false,
                 'is_visible_in_grid' => false,
                 'is_filterable_in_grid' => false,
-                'option' => array('values' => array(""))
             ]
         );
 
