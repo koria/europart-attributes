@@ -59,7 +59,7 @@ class AddModelProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'frontend' => '',
                 'required' => true,
                 'backend' => '',
-                'sort_order' => '30',
+                'sort_order' => '10',
                 'global' => ScopedAttributeInterface::SCOPE_GLOBAL,
                 'default' => null,
                 'visible' => true,
@@ -73,8 +73,8 @@ class AddModelProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'group' => 'General',
                 'used_in_product_listing' => true,
                 'is_used_in_grid' => true,
-                'is_visible_in_grid' => false,
-                'is_filterable_in_grid' => false,
+                'is_visible_in_grid' => true,
+                'is_filterable_in_grid' => true,
                 'option' => array('values' => array(""))
             ]
         );
@@ -106,7 +106,7 @@ class AddModelProductAttribute implements DataPatchInterface, PatchRevertableInt
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }

@@ -52,7 +52,7 @@ class AddPromIdCategoryAttribute implements DataPatchInterface, PatchRevertableI
             \Magento\Catalog\Model\Category::ENTITY,
             'prom_id',
             [
-                'type' => 'varchar',
+                'type' => 'int',
                 'label' => 'Prom category ID',
                 'input' => 'text',
                 'sort_order' => 555,
@@ -94,7 +94,7 @@ class AddPromIdCategoryAttribute implements DataPatchInterface, PatchRevertableI
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }

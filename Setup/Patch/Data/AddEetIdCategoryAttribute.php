@@ -52,7 +52,7 @@ class AddEetIdCategoryAttribute implements DataPatchInterface, PatchRevertableIn
             \Magento\Catalog\Model\Category::ENTITY,
             'eet_id',
             [
-                'type' => 'varchar',
+                'type' => 'int',
                 'label' => 'EET category ID',
                 'input' => 'text',
                 'sort_order' => 333,
@@ -94,7 +94,7 @@ class AddEetIdCategoryAttribute implements DataPatchInterface, PatchRevertableIn
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }

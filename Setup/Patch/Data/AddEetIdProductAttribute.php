@@ -64,7 +64,7 @@ class AddEetIdProductAttribute implements DataPatchInterface, PatchRevertableInt
                 'default' => null,
                 'visible' => true,
                 'user_defined' => true,
-                'searchable' => false,
+                'searchable' => true,
                 'filterable' => false,
                 'comparable' => false,
                 'visible_on_front' => false,

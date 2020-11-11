@@ -52,7 +52,7 @@ class AddRzIdCategoryAttribute implements DataPatchInterface, PatchRevertableInt
             \Magento\Catalog\Model\Category::ENTITY,
             'rz_id',
             [
-                'type' => 'varchar',
+                'type' => 'int',
                 'label' => 'Rozetka category ID',
                 'input' => 'text',
                 'sort_order' => 444,
@@ -94,7 +94,7 @@ class AddRzIdCategoryAttribute implements DataPatchInterface, PatchRevertableInt
     public static function getDependencies()
     {
         return [
-        
+
         ];
     }
 }
