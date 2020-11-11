@@ -5,7 +5,7 @@
  */
 declare(strict_types=1);
 
-namespace Europarts\Category\Setup\Patch\Data;
+namespace Europarts\Europarts\Setup\Patch\Data;
 
 use Magento\Eav\Model\Entity\Attribute\ScopedAttributeInterface;
 use Magento\Eav\Setup\EavSetup;
